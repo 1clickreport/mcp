@@ -51,7 +51,7 @@ Recent notable updates to the 1ClickReport MCP Server.
 - OAuth 2.0 with PKCE
 - AI Dashboard Builder (separate SaaS feature)
 - Meta Tech Provider verified status approved
-- First paying customers across Chile, South Africa, India, New Zealand, UAE
+- First paying customers across US, Europe, LATAM, and Asia
 
 ---
 

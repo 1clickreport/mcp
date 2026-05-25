@@ -139,7 +139,7 @@ Trial users get full Premium access. After trial, pick a plan or downgrade to re
 - ✅ Tech Provider verified by Meta
 - ✅ Approved Meta scopes: `business_management`, `ads_read`
 - 🔄 Meta Advanced Access in review (May 2026) — adding `ads_management`, `pages_show_list`, `pages_read_engagement`
-- ✅ Paying customers across Chile, South Africa, India, New Zealand, UAE
+- ✅ Paying customers across US, Europe, LATAM, and Asia
 
 ---
 
@@ -157,7 +157,7 @@ Trial users get full Premium access. After trial, pick a plan or downgrade to re
 
 - **Website**: https://www.1clickreport.com
 - **Dashboard**: https://app.1clickreport.com
-- **Documentation**: https://www.1clickreport.com/documentation
+- **Documentation**: https://www.1clickreport.com/docs/
 - **Privacy Policy**: https://www.1clickreport.com/privacy-policy
 - **Terms of Service**: https://www.1clickreport.com/terms
 - **Refund Policy**: https://www.1clickreport.com/refund-policy
@@ -166,7 +166,7 @@ Trial users get full Premium access. After trial, pick a plan or downgrade to re
 
 ## Founder
 
-Built by [Suryansh Jaiswal](https://www.linkedin.com/in/suryansh-jaiswal) — solo founder, Dubai, UAE. Bootstrapped, profitable.
+Built by [Suryansh Jaiswal](https://www.linkedin.com/in/suryanshjaiswal/) — solo founder, Dubai, UAE. Bootstrapped, profitable.
 
 Reach me at **suryansh@1clickreport.com**.
 

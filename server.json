@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.1clickreport/mcp",
+  "title": "1ClickReport",
+  "description": "40 tools for marketing analytics, campaign management, and AI monitoring across 6 platforms.",
+  "websiteUrl": "https://www.1clickreport.com",
+  "repository": {
+    "url": "https://github.com/1clickreport/mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.1clickreport.com/mcp"
+    }
+  ]
+}

@@ -44,7 +44,7 @@ Each opens an OAuth flow for that platform. Most take 30-60 seconds.
 
 Back in Claude.ai, start a new chat with the 1ClickReport connector enabled. Try:
 
-### Read-only prompts (Pro plan)
+### Read-only prompts (Solo plan)
 
 ```
 "What Google Ads accounts do I have access to?"
@@ -64,7 +64,7 @@ Back in Claude.ai, start a new chat with the 1ClickReport connector enabled. Try
 "Show me my Stripe MRR trend over the last 6 months"
 ```
 
-### Write prompts (Premium plan + trial users)
+### Write prompts (Team, Agency and trial users)
 
 ```
 "Create a Meta Ads campaign with a $20 daily budget targeting small business

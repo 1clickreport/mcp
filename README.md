@@ -1,7 +1,7 @@
 # 1ClickReport MCP Server
 
 > **Your AI marketing analyst, connected to live data.**
-> 40 MCP tools across Google Ads, Meta Ads, GA4, Search Console, and Stripe — read, analyze, manage, and monitor.
+> 75 MCP tools across Google Ads, Meta Ads, GA4, Search Console, Shopify, Stripe and WordPress — read, analyze, manage, and monitor.
 
 [![smithery badge](https://smithery.ai/badge/oneclickreport/marketing)](https://smithery.ai/servers/oneclickreport/marketing)
 [![MCP](https://img.shields.io/badge/MCP-1.27%2B-blue)](https://modelcontextprotocol.io)
@@ -25,7 +25,7 @@
 - **"Create a Meta Ads campaign targeting small business owners with a $20 daily budget"** → Claude creates campaign + ad set + ads in PAUSED state. You review in Meta Ads Manager before activating.
 - **"Compare my Google Ads vs Meta Ads ROAS last quarter"** → Cross-platform analysis with budget reallocation recommendations.
 
-**40 tools. 6 platforms. Read, analyze, manage, monitor.**
+**75 tools. 7 platforms. Read, analyze, manage, monitor.**
 
 ---
 
@@ -55,11 +55,13 @@
 
 After OAuth, you'll land on the onboarding page. Connect one or more:
 
-- **Google Ads** — read + create campaigns
-- **Meta Ads** (Facebook + Instagram) — read + create campaigns
+- **Google Ads** — read + create and manage campaigns
+- **Meta Ads** (Facebook + Instagram) — read + create and manage campaigns
 - **Google Analytics 4** — traffic, conversions, funnels
 - **Google Search Console** — organic search performance
+- **Shopify** — orders, revenue, top products
 - **Stripe** — revenue, MRR, churn
+- **WordPress / GitHub** — SEO Autopilot: audits, drafts, redirects, pull requests
 
 ### 3. Ask Claude
 
@@ -75,23 +77,27 @@ That's it. No CSVs, no dashboards, no waiting for an analyst.
 
 ---
 
-## Tools (40)
+## Tools (75)
 
 Full categorized list with descriptions: [docs/TOOLS.md](docs/TOOLS.md)
 
-**Pro plan ($25/mo)** — Read & analyze (29 tools):
-- Google Analytics 4: traffic, events, funnels (4)
-- Google Ads: metrics, search terms, budgets, audits, keyword research (8)
-- Meta Ads: ad metrics, Pages, page engagement, creatives (5)
-- Search Console: clicks, impressions, rankings (2)
+75 tools across 7 platforms — 42 read, 33 write.
+
+**Solo ($25/mo)** — analytics across every connected platform (43 tools):
+- Google Analytics 4: traffic, events, funnels, AI referral traffic (4)
+- Google Ads: metrics, search terms, budgets, audits, recommendations, keyword research (read subset of 23)
+- Meta Ads: ad metrics, Pages, creatives, audiences, messaging, targeting search (read subset of 18)
+- Search Console: clicks, impressions, rankings, URL inspection, sitemaps, quick wins (4)
+- Shopify: shop, orders, revenue, top products (4)
 - Stripe: revenue, MRR, subscriptions (1)
 - Monitoring: list rules, see activity (2)
-- Discovery: list accounts/properties/sites (4)
+- Discovery: list accounts / properties / sites (4)
 
-**Premium plan ($99/mo)** — Everything above PLUS write (11 more):
-- Google Ads management: create + update campaigns, ad groups, ads, keywords, audiences, targeting (8)
-- Meta Ads management: create + update campaigns, ad sets, ads (6)
-- AI Monitoring Agents: create + update + delete rules (3)
+**Team ($99/mo) and Agency ($249/mo)** — everything above plus 32 management tools:
+- Google Ads management: create and update campaigns, ad groups, ads, keywords, conversions, audiences, targeting, assets
+- Meta Ads management: create and update campaigns, ad sets, ads, custom audiences
+- AI Monitoring Agents: create, update, delete rules
+- SEO Autopilot (12 tools, own entitlement): WordPress audits, drafts, redirects, FAQ schema, authors, and GitHub pull requests
 
 ---
 
@@ -99,11 +105,11 @@ Full categorized list with descriptions: [docs/TOOLS.md](docs/TOOLS.md)
 
 - **OAuth 2.0 with PKCE** — no passwords ever touch our system. Credentials are platform-owned (Google, Meta, Stripe).
 - **Encrypted token storage** in Postgres. Tokens never logged, never returned in tool responses.
-- **Tech Provider verified** by Meta. Tier upgrade in progress (May 2026).
+- **Tech Provider verified** by Meta, with Advanced Access approved for every permission the connector requests.
 - **Hardcoded budget guardrails** — Meta write tools enforce $50/day max budget per ad set in code.
 - **PAUSED-by-default writes** — every campaign / ad set / ad created via Claude lands in PAUSED state. Nothing goes live without explicit user activation.
 - **One-click disconnect** — revoke any integration from your dashboard; tokens deleted immediately.
-- **Plan-aware enforcement** — write tools gated behind active Premium subscription; trial users get full access.
+- **Plan-aware enforcement** — management tools gated behind an active Team or Agency plan; trial users get full access.
 - **Data deletion** — privacy@1clickreport.com or via in-app disconnect flow. Public instructions at [1clickreport.com/data-deletion](https://www.1clickreport.com/data-deletion).
 
 ---
@@ -112,11 +118,12 @@ Full categorized list with descriptions: [docs/TOOLS.md](docs/TOOLS.md)
 
 | Plan | Price | What's included |
 |---|---|---|
-| **Free trial** | 7 days, no credit card | Full Premium access |
-| **Pro** | $25/mo | All read & analyze tools, AI Dashboard Builder, unlimited queries |
-| **Premium** | $99/mo | Pro + campaign creation/management + 24/7 AI monitoring agents |
+| **Free trial** | 7 days, no credit card | Full Team access |
+| **Solo** | $25/mo | All analytics tools across every connected platform, unlimited queries |
+| **Team** | $99/mo | Solo + campaign creation and management + SEO Autopilot + 24/7 AI monitoring agents |
+| **Agency** | $249/mo | Everything in Team, with more connected accounts and seats |
 
-Trial users get full Premium access. After trial, pick a plan or downgrade to read-only.
+Trial users get full Team access. Legacy Pro and Premium plans are grandfathered: Pro keeps Solo-level access, Premium keeps Team-level access.
 
 ---
 
@@ -128,8 +135,8 @@ Trial users get full Premium access. After trial, pick a plan or downgrade to re
 | **Transport** | Streamable HTTP (primary) + SSE (legacy fallback) |
 | **Authentication** | OAuth 2.0 with PKCE |
 | **Server URL** | `https://mcp.1clickreport.com/mcp` |
-| **Tool count** | 40 |
-| **Platforms supported** | Google Ads, Meta Ads, GA4, Search Console, Google Keyword Planner, Stripe |
+| **Tool count** | 75 |
+| **Platforms supported** | Google Ads, Meta Ads, GA4, Search Console, Google Keyword Planner, Shopify, Stripe, WordPress, GitHub |
 | **Verified credentials** | Meta Tech Provider, Google Ads Standard Access (writes), GA4 Data API, GSC API, Stripe API |
 
 ---
@@ -138,8 +145,7 @@ Trial users get full Premium access. After trial, pick a plan or downgrade to re
 
 - ✅ Production live at `mcp.1clickreport.com/mcp` since Q4 2025
 - ✅ Tech Provider verified by Meta
-- ✅ Approved Meta scopes: `business_management`, `ads_read`
-- 🔄 Meta Advanced Access in review (May 2026) — adding `ads_management`, `pages_show_list`, `pages_read_engagement`
+- ✅ Meta Advanced Access approved for every requested permission: `ads_read`, `ads_management`, `business_management`, `pages_show_list`, `pages_read_engagement`
 - ✅ Paying customers across US, Europe, LATAM, and Asia
 
 ---

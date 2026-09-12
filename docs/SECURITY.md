@@ -52,7 +52,7 @@ Every write tool includes hardcoded safety controls:
 
 - **Tech Provider verified** by Meta (Business Verification + Access Verification)
 - **Standard Access approved** for `ads_read` + `business_management` (since Oct 2025)
-- **Advanced Access in review** (submitted May 2026) for `ads_management`, `pages_show_list`, `pages_read_engagement`
+- **Advanced Access approved** for every permission the connector requests: `ads_read`, `ads_management`, `business_management`, `pages_show_list`, `pages_read_engagement`
 - Per Meta's terms: we read data on behalf of the authenticated user only; we do not sell or share data with third parties
 
 ## Google API compliance

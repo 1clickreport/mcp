@@ -17,7 +17,7 @@ High-level view of how 1ClickReport's MCP server fits together. Implementation d
 │  1ClickReport MCP Server   mcp.1clickreport.com/mcp         │
 │  (Node.js, hosted on Railway)                               │
 │                                                             │
-│  • Tool dispatch (40 tools)                                 │
+│  • Tool dispatch (75 tools)                                 │
 │  • Plan-gate middleware (subscription + grace window)       │
 │  • Per-user OAuth token management                          │
 │  • Cache-aware data fetch (self-healing background refresh) │

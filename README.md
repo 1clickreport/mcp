@@ -3,7 +3,6 @@
 > **Your AI marketing analyst, connected to live data.**
 > 104 MCP tools across Google Ads, Meta Ads, Facebook and Instagram organic, GA4, Search Console, Keyword Planner, Shopify, Stripe, WordPress, GitHub and ChatGPT Ads — read, analyze, manage, and monitor.
 
-[![smithery badge](https://smithery.ai/badge/oneclickreport/marketing)](https://smithery.ai/servers/oneclickreport/marketing)
 [![MCP](https://img.shields.io/badge/MCP-1.27%2B-blue)](https://modelcontextprotocol.io)
 [![OAuth](https://img.shields.io/badge/Auth-OAuth%202.0%20%2B%20PKCE-green)](#security)
 [![Status](https://img.shields.io/badge/status-production-brightgreen)](https://mcp.1clickreport.com/mcp)

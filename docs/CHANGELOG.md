@@ -4,6 +4,11 @@ Recent notable updates to the 1ClickReport MCP Server.
 
 ---
 
+## 2026-11-26 — v1.2.0
+
+- **104 tools across 11 platforms** (was 75 across 7). New: Facebook and Instagram organic (8), ChatGPT Ads (6), AI visibility (12), onboarding and publishing status (3). See [TOOLS.md](TOOLS.md#added-since-september-2026).
+- **Free trial is 3 days** (was 7), still no credit card, still full Team access.
+
 ## 2026-05-26
 
 - **DNS / gRPC fix** — closed a latent issue where Railway's outbound IPv6 routing caused Google Ads `listAccessibleCustomers` to hang on cold-cache scenarios. Now uses IPv4-only DNS resolution via in-code monkeypatch. Reviewer first-call experience is now clean.

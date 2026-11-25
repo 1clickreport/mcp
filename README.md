@@ -1,7 +1,7 @@
 # 1ClickReport MCP Server
 
 > **Your AI marketing analyst, connected to live data.**
-> 75 MCP tools across Google Ads, Meta Ads, GA4, Search Console, Shopify, Stripe and WordPress — read, analyze, manage, and monitor.
+> 104 MCP tools across Google Ads, Meta Ads, Facebook and Instagram organic, GA4, Search Console, Keyword Planner, Shopify, Stripe, WordPress, GitHub and ChatGPT Ads — read, analyze, manage, and monitor.
 
 [![smithery badge](https://smithery.ai/badge/oneclickreport/marketing)](https://smithery.ai/servers/oneclickreport/marketing)
 [![MCP](https://img.shields.io/badge/MCP-1.27%2B-blue)](https://modelcontextprotocol.io)
@@ -25,7 +25,7 @@
 - **"Create a Meta Ads campaign targeting small business owners with a $20 daily budget"** → Claude creates campaign + ad set + ads in PAUSED state. You review in Meta Ads Manager before activating.
 - **"Compare my Google Ads vs Meta Ads ROAS last quarter"** → Cross-platform analysis with budget reallocation recommendations.
 
-**75 tools. 7 platforms. Read, analyze, manage, monitor.**
+**104 tools. 11 platforms. Read, analyze, manage, monitor.**
 
 ---
 
@@ -77,11 +77,11 @@ That's it. No CSVs, no dashboards, no waiting for an analyst.
 
 ---
 
-## Tools (75)
+## Tools (104)
 
 Full categorized list with descriptions: [docs/TOOLS.md](docs/TOOLS.md)
 
-75 tools across 7 platforms — 42 read, 33 write.
+104 tools across 11 platforms. The per-platform lists below cover the original 75; the 29 added since September (Facebook and Instagram organic, ChatGPT Ads, AI visibility, onboarding) are listed in [docs/TOOLS.md](docs/TOOLS.md#added-since-september-2026).
 
 **Solo ($25/mo)** — analytics across every connected platform (43 tools):
 - Google Analytics 4: traffic, events, funnels, AI referral traffic (4)
@@ -118,7 +118,7 @@ Full categorized list with descriptions: [docs/TOOLS.md](docs/TOOLS.md)
 
 | Plan | Price | What's included |
 |---|---|---|
-| **Free trial** | 7 days, no credit card | Full Team access |
+| **Free trial** | 3 days, no credit card | Full Team access |
 | **Solo** | $25/mo | All analytics tools across every connected platform, unlimited queries |
 | **Team** | $99/mo | Solo + campaign creation and management + SEO Autopilot + 24/7 AI monitoring agents |
 | **Agency** | $249/mo | Everything in Team, with more connected accounts and seats |
@@ -135,8 +135,8 @@ Trial users get full Team access. Legacy Pro and Premium plans are grandfathered
 | **Transport** | Streamable HTTP (primary) + SSE (legacy fallback) |
 | **Authentication** | OAuth 2.0 with PKCE |
 | **Server URL** | `https://mcp.1clickreport.com/mcp` |
-| **Tool count** | 75 |
-| **Platforms supported** | Google Ads, Meta Ads, GA4, Search Console, Google Keyword Planner, Shopify, Stripe, WordPress, GitHub |
+| **Tool count** | 104 |
+| **Platforms supported** | Google Ads, Meta Ads, Facebook and Instagram organic, GA4, Search Console, Google Keyword Planner, Shopify, Stripe, WordPress, GitHub, ChatGPT Ads |
 | **Verified credentials** | Meta Tech Provider, Google Ads Standard Access (writes), GA4 Data API, GSC API, Stripe API |
 
 ---

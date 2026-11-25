@@ -21,7 +21,7 @@ Claude will open the 1ClickReport OAuth flow in a new tab.
 We use Google OAuth for app authentication (not Facebook Login). One-click sign-in.
 
 After authentication:
-- New users → auto-registered with 7-day Premium free trial (no credit card)
+- New users → auto-registered with 3-day free trial with full Team access (no credit card)
 - Existing users → resume your plan
 
 You'll land on the 1ClickReport onboarding page at `app.1clickreport.com`.

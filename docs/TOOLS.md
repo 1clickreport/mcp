@@ -1,6 +1,6 @@
 # Tools Reference
 
-Complete list of the 75 MCP tools exposed by the 1ClickReport server — 42 read, 33 write, across 7 platforms.
+Complete list of the 104 MCP tools exposed by the 1ClickReport server, across 11 platforms. The first sections are the original 75; the 29 added since September 2026 are at the end.
 
 **Solo** users get every analytics tool (43 tools). **Team, Agency and trial** users also get the 32 management tools. The 13 SEO Autopilot tools sit behind their own entitlement.
 
@@ -134,6 +134,61 @@ Complete list of the 75 MCP tools exposed by the 1ClickReport server — 42 read
 | `list_google_ads_accounts` | Read | Solo + | Google Ads accounts, including manager/leaf structure |
 | `list_gsc_sites` | Read | Solo + | Verified Search Console properties |
 | `list_meta_ads_accounts` | Read | Solo + | Meta ad accounts the user can access |
+
+---
+
+---
+
+## Added since September 2026
+
+### Facebook and Instagram organic (8)
+
+| Tool | Type | Plan | Description |
+|---|---|---|---|
+| `get_meta_social_overview` | Read | Solo + | Page and Instagram account overview |
+| `get_meta_social_posts` | Read | Solo + | Recent organic posts with engagement |
+| `get_meta_social_post` | Read | Solo + | One organic post in detail |
+| `get_meta_social_audience` | Read | Solo + | Organic follower demographics by age, gender, country and city |
+| `get_meta_social_competitors` | Read | Solo + | Compare the business's Instagram with competitors' public Instagram stats |
+| `get_meta_social_hashtag` | Read | Solo + | Research one Instagram hashtag: top public posts, median engagement, content mix |
+| `get_meta_social_mentions` | Read | Solo + | Posts by other people or businesses that tag the account or Page |
+| `publish_meta_post` | Write | Team / Agency | Publish an organic post to a Page or Instagram account |
+
+### ChatGPT Ads (6)
+
+| Tool | Type | Plan | Description |
+|---|---|---|---|
+| `list_chatgpt_ads_accounts` | Read | Solo + | List connected ChatGPT Ads accounts |
+| `list_chatgpt_campaigns` | Read | Solo + | List ChatGPT Ads campaigns |
+| `get_chatgpt_ads_metrics` | Read | Solo + | ChatGPT Ads performance metrics |
+| `get_chatgpt_ads_conversions` | Read | Solo + | ChatGPT Ads conversions |
+| `get_chatgpt_ad_build_assets` | Read | Solo + | Assets available for a new campaign |
+| `create_chatgpt_campaign_full` | Write | Team / Agency | Build a full campaign, created PAUSED |
+
+### AI visibility (12)
+
+| Tool | Type | Plan | Description |
+|---|---|---|---|
+| `start_ai_visibility` | Write | Solo + | Start tracking how AI assistants answer questions about a site |
+| `set_client_website` | Write | Solo + | Save a business or client website and map its GA4 property and Search Console site |
+| `list_aeo_questions` | Read | Solo + | Questions being tracked |
+| `approve_aeo_questions` | Write | Solo + | Approve the question set |
+| `get_aeo_briefing` | Read | Solo + | Analysis: where the site is mentioned, who wins instead and why |
+| `get_aeo_evidence` | Read | Solo + | Raw answers and cited pages behind the analysis |
+| `compare_aeo_checks` | Read | Solo + | Compare two check rounds |
+| `submit_aeo_plan` | Write | Solo + | Save an action plan |
+| `get_aeo_drafts` | Read | Solo + | Content drafts written for the plan |
+| `submit_site_change` | Write | Team / Agency | Submit drafted content as a change for a client's site; nothing is published yet |
+| `publish_site_change` | Write | Team / Agency | Publish a submitted change, subject to approval, the site's live-publish switch and read-back |
+| `undo_site_change` | Write | Team / Agency | Roll back a published site change |
+
+### Onboarding and publishing status (3)
+
+| Tool | Type | Plan | Description |
+|---|---|---|---|
+| `get_connect_link` | Read | Solo + | Link the user clicks to connect a data source |
+| `list_connections` | Read | Solo + | What is connected |
+| `get_publication` | Read | Solo + | State of a change queued with publish_site_change (queued, live, PR open, merged or failed) |
 
 ---
 

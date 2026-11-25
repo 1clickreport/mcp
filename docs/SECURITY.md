@@ -20,7 +20,7 @@ When errors are captured for debugging (Sentry, internal Discord alerts), any fi
 
 - **Plan gate middleware** checks subscription status + `current_period_end` + 1-day grace window before allowing access to any tool
 - **Write tools** (campaign creation, monitoring rule creation) gated behind active Premium subscription
-- **Trial users** get full Premium access during their 7-day trial (no credit card required)
+- **Trial users** get full Premium access during their 3-day trial (no credit card required)
 - **Expired / cancelled users** are blocked from all tools with a clear "renew at [URL]" message
 - **Read-only escape hatch**: discovery tools (`list_*_accounts`) remain accessible during gate denial so users can see what they had
 
